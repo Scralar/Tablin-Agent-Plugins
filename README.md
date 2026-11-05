@@ -1,4 +1,4 @@
-# Tablin agent plugins
+# Tablin-Agent-Plugins
 
 Plugin packages that connect an AI agent to the Tablin desk open on your PC, through Agent link. One repo holds the package for every supported agent. The Tablin desktop app downloads the latest packages from here when you choose **Get plugin** or **Save to folder**, and checks each download against the SHA-256 in `plugins.json`.
 
