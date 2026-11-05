@@ -1,6 +1,6 @@
 {
   "name": "tablin-agent-link",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Work your Tablin jobs and candidates from Gemini CLI. Search candidates, read and update jobs, and run screening in the Tablin desktop app. Needs the app open with Agent link on, signed in with the same account. You sign in in the browser; there is no key to paste.",
   "mcpServers": {
     "tablin": {

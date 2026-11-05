@@ -56,4 +56,4 @@ The desktop app reads `https://github.com/Scralar/Tablin-Agent-Plugins/releases/
 
 ## Licence
 
-TODO: licence not chosen yet. Until one is added, all rights are reserved.
+MIT, see [LICENSE](LICENSE). This covers the plugin manifests, skill text and install files here. The Tablin app itself is proprietary.
