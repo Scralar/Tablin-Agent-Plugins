@@ -26,6 +26,8 @@ The tool result names `errorCode`:
 - `tool_off`: that action is off. Do not retry.
 - `link_interrupted`: the link dropped or the call took over 120 seconds. Retry that one call once.
 - `sign_in_required`: connect the agent again. Do not retry.
+- `no_desk_linked`: no desk is linked to this account. Ask them to open the app, turn on Agent link in Settings, then connect again. Do not retry.
+- `desk_removed`: the link to this PC was removed. Ask them to reconnect from Settings. Do not retry.
 - `invalid_input`: an argument was rejected. Read the message, fix the argument, and do not retry unchanged.
 - `not_found`: no record with that id. Check the id; do not retry unchanged.
 - `conflict`: clashes with an existing record. Do not retry unchanged.

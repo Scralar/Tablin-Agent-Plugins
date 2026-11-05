@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "version": "1.1.1",
+  "version": "1.1.2",
   "address": "https://3.9.77.189/mcp",
   "plugins": [
     {
@@ -9,11 +9,11 @@
       "folder": "tablin-agent-link-claude",
       "zip": "tablin-agent-link-claude.zip",
       "archive": "dist/tablin-agent-link-claude.zip",
-      "sha256": "d71a37962b042e5afc71df058421ceab73f50321f481207c049cd9bb6ccbda7c",
+      "sha256": "2975925d4900d35deedd8fa3964ee3bf784d576a22ea259e1e51a7bfd7789dda",
       "files": [
         {
           "path": ".claude-plugin/plugin.json",
-          "sha256": "de59882c58459b1850e0cbbd8fe962198e093a4417d5fce263e94a14252e75c0"
+          "sha256": "e6badf02e9a5a804cefafa9fa3571067ae3539fe98c66e285d17b54e7462e265"
         },
         {
           "path": ".mcp.json",
@@ -21,7 +21,7 @@
         },
         {
           "path": "skills/tablin-agent-link/SKILL.md",
-          "sha256": "e57b4b346f03be1877a1229d401311c735b3119a73cc7bba9f96323145e690e9"
+          "sha256": "a73b7ae52e99c617431691e3a41cc2853b5f1d8fb99ee8014108544f4aa44446"
         },
         {
           "path": "README.md",
@@ -35,11 +35,11 @@
       "folder": "tablin-claude-code",
       "zip": null,
       "archive": "dist/tablin-claude-code.zip",
-      "sha256": "68422455f34f051f8f1f4008be128d4153d471caa946a4b6e2cd17eae6c925e4",
+      "sha256": "7af82dc009907378d47caf5a6370d0929ed1e4aa5133f4c498185e2afc1f6658",
       "files": [
         {
           "path": ".claude-plugin/plugin.json",
-          "sha256": "bc40fc3bfc9e098572a4ff4e707200732f5b3427ce5fd2800ee8a5fdf3583ebf"
+          "sha256": "b364de70b04bb7a2719ed9018b0d07b22abb2850a978029f3cd26e5e16cb66c4"
         },
         {
           "path": ".mcp.json",
@@ -47,7 +47,7 @@
         },
         {
           "path": "skills/tablin-agent-link/SKILL.md",
-          "sha256": "e57b4b346f03be1877a1229d401311c735b3119a73cc7bba9f96323145e690e9"
+          "sha256": "a73b7ae52e99c617431691e3a41cc2853b5f1d8fb99ee8014108544f4aa44446"
         },
         {
           "path": "README.md",
@@ -65,7 +65,7 @@
       "folder": "tablin-chatgpt",
       "zip": null,
       "archive": "dist/tablin-chatgpt.zip",
-      "sha256": "fdc021591340468ac11fd3e2c5ad41023b39fecf2b919c42e3781580e8a0a5a4",
+      "sha256": "32249bb9b6970bf3bf71683da6f8d6bbdbefacd8aef9a9dc37b020e92297faec",
       "files": [
         {
           "path": ".agents/plugins/marketplace.json",
@@ -73,7 +73,7 @@
         },
         {
           "path": "plugins/tablin-agent-link/plugin.json",
-          "sha256": "dfdc068ba79c5bd57ba15ccb6bb4740a0cfe2e7b0ad75abbac1e245f7f0ccd73"
+          "sha256": "427484dca4400da4de87553af4a904ce4e3fc077f08eb616133765466b71feab"
         },
         {
           "path": "plugins/tablin-agent-link/mcp.json",
@@ -81,7 +81,7 @@
         },
         {
           "path": "plugins/tablin-agent-link/skills/tablin-agent-link/SKILL.md",
-          "sha256": "e57b4b346f03be1877a1229d401311c735b3119a73cc7bba9f96323145e690e9"
+          "sha256": "a73b7ae52e99c617431691e3a41cc2853b5f1d8fb99ee8014108544f4aa44446"
         },
         {
           "path": "README.md",
@@ -95,7 +95,7 @@
       "folder": "tablin-agent-link-perplexity",
       "zip": "tablin-agent-link-perplexity.zip",
       "archive": "dist/tablin-agent-link-perplexity.zip",
-      "sha256": "d196a7e5d1ac6b566769912c62645a87fc4fb71f55a083cdf9a5873385f06554",
+      "sha256": "09f4d177c908430e725252c006e992755e1955fdfb877822d0983d21069bedc3",
       "files": [
         {
           "path": "plugin.json",
@@ -107,11 +107,11 @@
         },
         {
           "path": "skills/tablin-agent-link/SKILL.md",
-          "sha256": "e57b4b346f03be1877a1229d401311c735b3119a73cc7bba9f96323145e690e9"
+          "sha256": "a73b7ae52e99c617431691e3a41cc2853b5f1d8fb99ee8014108544f4aa44446"
         },
         {
           "path": "README.md",
-          "sha256": "e1ebe8c64a65ee265f3b8387d6954c2bbdb4549db0be5292930b575f3c9bc798"
+          "sha256": "4aa999acae40904b0d05f15b4a3dfe38acd07168aea6f5aebd3f3a7743fe1b76"
         }
       ]
     },
@@ -121,11 +121,11 @@
       "folder": "tablin-cursor",
       "zip": null,
       "archive": "dist/tablin-cursor.zip",
-      "sha256": "63495a58531a8517ffc5eb1cd7972e7a74fd39adafa0073d7af54e5f4065169f",
+      "sha256": "a73921509cd8e9508d223067594a56c70296bbb3ef787de01d46a57660f0da65",
       "files": [
         {
           "path": ".cursor-plugin/plugin.json",
-          "sha256": "bfaf80e857b7a6125197aca5f6c59406278f46f4dde2436056c1087f4ecb26c2"
+          "sha256": "c381137054983411e9e5b92301542cba327431fb43b853496acef62044fcb626"
         },
         {
           "path": "mcp.json",
@@ -133,7 +133,7 @@
         },
         {
           "path": "skills/tablin-agent-link/SKILL.md",
-          "sha256": "e57b4b346f03be1877a1229d401311c735b3119a73cc7bba9f96323145e690e9"
+          "sha256": "a73b7ae52e99c617431691e3a41cc2853b5f1d8fb99ee8014108544f4aa44446"
         },
         {
           "path": "README.md",
@@ -147,11 +147,11 @@
       "folder": "tablin-vscode",
       "zip": null,
       "archive": "dist/tablin-vscode.zip",
-      "sha256": "e6f3dfbbf157726a2a9362ad8564bba30080cdd02d2161324a961557021f92c2",
+      "sha256": "ff08edcc369d30f5e498400c149eec79e72a6c68aa521f0b2d02f5a728702b17",
       "files": [
         {
           "path": "plugin.json",
-          "sha256": "6fdcb90f591b46e365aa6ea077cd83242e2a70ea6cb87a70d499ecf7bb4ece7b"
+          "sha256": "2ab98551850d2f43fa2bbb4f1ae260ba2623cd41977b267dd99f019f502de94f"
         },
         {
           "path": "mcp.json",
@@ -159,7 +159,7 @@
         },
         {
           "path": "skills/tablin-agent-link/SKILL.md",
-          "sha256": "e57b4b346f03be1877a1229d401311c735b3119a73cc7bba9f96323145e690e9"
+          "sha256": "a73b7ae52e99c617431691e3a41cc2853b5f1d8fb99ee8014108544f4aa44446"
         },
         {
           "path": "README.md",
@@ -173,7 +173,7 @@
       "folder": "tablin-windsurf",
       "zip": null,
       "archive": "dist/tablin-windsurf.zip",
-      "sha256": "a67de675128e14d59d81a86764f661f7d82d16c7f07dc2d9c041c635f6f7c4b7",
+      "sha256": "3edfc8a126e3283cde634feee6f69adebb24cb93819bbc0eaccfae784e419260",
       "files": [
         {
           "path": "mcp_config.json",
@@ -181,7 +181,7 @@
         },
         {
           "path": "skills/tablin-agent-link/SKILL.md",
-          "sha256": "e57b4b346f03be1877a1229d401311c735b3119a73cc7bba9f96323145e690e9"
+          "sha256": "a73b7ae52e99c617431691e3a41cc2853b5f1d8fb99ee8014108544f4aa44446"
         },
         {
           "path": "README.md",
@@ -195,15 +195,15 @@
       "folder": "tablin-gemini",
       "zip": null,
       "archive": "dist/tablin-gemini.zip",
-      "sha256": "323cc6e19fc257b7ad1f31262d31c6689d1bea7b5219ddb3af8e39f3957ef62b",
+      "sha256": "befd0ba10e83d9ccbb52ffa4b0305e9e000426ccb1cdb57ea672d3769992824a",
       "files": [
         {
           "path": "gemini-extension.json",
-          "sha256": "dfed7cb887532164800522a1d56060f6ddd36e2208f6fc700db10133ac14772c"
+          "sha256": "f4e01d2f63cbb7b1053342cff17dfe2160a512f160329e425fb0e7cc3f1d59e0"
         },
         {
           "path": "skills/tablin-agent-link/SKILL.md",
-          "sha256": "e57b4b346f03be1877a1229d401311c735b3119a73cc7bba9f96323145e690e9"
+          "sha256": "a73b7ae52e99c617431691e3a41cc2853b5f1d8fb99ee8014108544f4aa44446"
         },
         {
           "path": "README.md",
@@ -217,7 +217,7 @@
       "folder": "tablin-codex",
       "zip": null,
       "archive": "dist/tablin-codex.zip",
-      "sha256": "6e1384ce9a6a72a87feffad92945190578b94b070f31cbc72f93e104ec7bfe15",
+      "sha256": "aa0deb0cbc1858d827c46563269dfb8203a14f3c54610fff4e4ada329656c817",
       "files": [
         {
           "path": ".agents/plugins/marketplace.json",
@@ -225,7 +225,7 @@
         },
         {
           "path": "plugins/tablin-agent-link/plugin.json",
-          "sha256": "68cf484f9144facc517f189d1e158ecbccf3bee2d190bf0e9db50382639feabd"
+          "sha256": "c823dbe48a64cb77b5f53b8540fc8c6bb91c04a01580995014b92d4c7a16af0e"
         },
         {
           "path": "plugins/tablin-agent-link/mcp.json",
@@ -233,7 +233,7 @@
         },
         {
           "path": "plugins/tablin-agent-link/skills/tablin-agent-link/SKILL.md",
-          "sha256": "e57b4b346f03be1877a1229d401311c735b3119a73cc7bba9f96323145e690e9"
+          "sha256": "a73b7ae52e99c617431691e3a41cc2853b5f1d8fb99ee8014108544f4aa44446"
         },
         {
           "path": "README.md",
