@@ -1,17 +1,17 @@
-# Tablin Agent Link
+# Tablin for Cursor
 
-Lets Cursor work in the open Tablin desk through Agent link. Sign in with **Authenticate**. There is no key to paste.
+Work your Tablin jobs and candidates from Cursor: search candidates, read and update jobs, and run screening in the Tablin desktop app through Agent link. The app must be open with Agent link on. Sign in with **Authenticate**. There is no key to paste.
 
 ## What is in it
 
-- `mcp.json`: one server, `desk`, at `https://3.9.77.189/mcp`. Sign-in is OAuth in the browser.
+- `mcp.json`: one server, `tablin`, at `https://3.9.77.189/mcp`. Sign-in is OAuth in the browser.
 - `skills/tablin-agent-link`: when to use the link, and what to do for each error code.
 - `rules/agent-link.mdc`: call `guide_read` first, keep the developer connection separate.
 - `commands/connect-desk.md`: the connect steps as a slash command.
 
 ## Install
 
-In Cursor, add this repository as a plugin source (the install file is `.cursor-plugin/marketplace.json` at the repo root), then install **Tablin Agent Link**. Reload the window and open **Customize** to check it is listed.
+In Cursor, add this repository as a plugin source (the install file is `.cursor-plugin/marketplace.json` at the repo root), then install **Tablin for Cursor**. Reload the window and open **Customize** to check it is listed.
 
 ## Connect
 
@@ -22,6 +22,10 @@ In Cursor, add this repository as a plugin source (the install file is `.cursor-
 ## Other clients
 
 Any MCP client with OAuth (for example Perplexity) uses the same address and the same error codes. The client name shown on the desk comes from the name the client sends when it connects.
+
+## Upgrading from the desk server
+
+Before plugin 1.1.0 the server was named `desk`. After updating, it shows as `tablin`. Choose **Authenticate** on it once. If an old `desk` entry is still listed, remove it.
 
 ## When it does not work
 

@@ -1,7 +1,7 @@
 {
   "name": "tablin",
   "interface": {
-    "displayName": "Tablin"
+    "displayName": "Tablin plugins"
   },
   "plugins": [
     {

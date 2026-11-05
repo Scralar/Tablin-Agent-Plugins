@@ -1,14 +1,14 @@
 ---
 name: tablin-agent-link
 description: >-
-  Drive the open Tablin desk through Agent link. Use when the user wants to
-  read or change jobs, candidates or screening on the desk, or when a tool on
-  that server fails.
+  Use the Tablin desktop app through the tablin server: jobs,
+  candidates and screening. Use when the user asks about their Tablin jobs or
+  candidates, or when a tablin tool fails.
 ---
 
 # Tablin Agent link
 
-The server at `https://3.9.77.189/mcp` is the open desk. Sign-in happens in the browser page your agent opens. There is no key to paste.
+The `tablin` server at `https://3.9.77.189/mcp` reaches the Tablin desktop app open on the user's PC. Sign-in happens in the browser page your agent opens. There is no key to paste.
 
 ## Before a call
 

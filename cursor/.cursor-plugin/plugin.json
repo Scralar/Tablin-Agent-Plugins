@@ -1,11 +1,22 @@
 {
   "name": "tablin-agent-link",
-  "displayName": "Tablin Agent Link",
-  "version": "0.1.1",
-  "description": "Connect Cursor to the open desk through Agent link. Choose Authenticate to sign in. There is no key to paste.",
+  "displayName": "Tablin for Cursor",
+  "version": "1.1.0",
+  "description": "Work your Tablin jobs and candidates from Cursor. Search candidates, read and update jobs, and run screening in the Tablin desktop app. Needs the app open with Agent link on, signed in with the same account. You sign in in the browser; there is no key to paste.",
   "author": {
-    "name": "Tablin"
+    "name": "Tablin",
+    "url": "https://github.com/Scralar/Tablin-Agent-Plugins"
   },
+  "homepage": "https://github.com/Scralar/Tablin-Agent-Plugins",
+  "repository": "https://github.com/Scralar/Tablin-Agent-Plugins",
   "license": "UNLICENSED",
-  "keywords": ["tablin", "agent-link", "mcp"]
+  "keywords": [
+    "tablin",
+    "recruiting",
+    "jobs",
+    "candidates",
+    "cv-screening",
+    "agent-link"
+  ],
+  "logo": "assets/logo.png"
 }

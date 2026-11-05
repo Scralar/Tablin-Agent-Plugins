@@ -1,6 +1,6 @@
 # Tablin-Agent-Plugins
 
-Plugin packages that connect an AI agent to the Tablin desk open on your PC, through Agent link. One repo holds the package for every supported agent. The Tablin desktop app downloads the latest GitHub Release (its `plugins.json` and zips) when you choose **Get plugin** or **Save to folder**, and checks each download against the SHA-256 in `plugins.json`.
+Plugins that let your AI agent work your Tablin jobs, candidates and screening in the Tablin desktop app, through Agent link. The app must be open with Agent link on. Every agent shows the server as `tablin` (the Cursor plugin called it `desk` before 1.1.0). One repo holds the package for every supported agent. The Tablin desktop app downloads the latest GitHub Release (its `plugins.json` and zips) when you choose **Get plugin** or **Save to folder**, and checks each download against the SHA-256 in `plugins.json`.
 
 ## What is in it
 
@@ -19,16 +19,32 @@ Sign in to the agent with the same account as the PC running the desk. On the de
 | Agent | Package | Steps |
 | --- | --- | --- |
 | Claude (web or desktop) | `dist/tablin-agent-link-claude.zip` | **Customize > Plugins**, **Add**, **Upload plugin**, pick the zip. |
-| Claude Code | `plugins/tablin-claude-code` | `/plugin marketplace add` followed by the folder path, then install the plugin. |
-| ChatGPT desktop | `plugins/tablin-chatgpt` | Follow `README.md` in the folder. |
-| Codex | `plugins/tablin-codex` | `codex plugin marketplace add` followed by the folder path. |
+| Claude Code | this repo | `/plugin marketplace add Scralar/Tablin-Agent-Plugins`, then install **tablin-agent-link**. |
+| ChatGPT desktop | this repo | `codex plugin marketplace add Scralar/Tablin-Agent-Plugins`, restart the app, install from the **Tablin plugins** source. Or follow `plugins/tablin-chatgpt/README.md`. |
+| Codex | this repo | `codex plugin marketplace add Scralar/Tablin-Agent-Plugins`. |
 | Perplexity | `dist/tablin-agent-link-perplexity.zip` | **Plugins**, **Add custom**, **Plugin**, upload the zip. |
-| Cursor | this repo | Add this repo as a plugin source and install **Tablin Agent Link**. Or copy `plugins/tablin-cursor` to `~/.cursor/plugins/local/tablin-agent-link`. |
-| VS Code | `plugins/tablin-vscode` | **Chat: Install Plugin from Source** and enter the folder path. |
-| Windsurf | `plugins/tablin-windsurf` | Follow `README.md` in the folder. |
-| Gemini CLI | `plugins/tablin-gemini` | `gemini extensions install` followed by the folder path. |
+| Cursor | this repo | Add this repo as a plugin source and install **Tablin for Cursor**. Or copy `plugins/tablin-cursor` to `~/.cursor/plugins/local/tablin-agent-link`. |
+| VS Code | this repo | Add `Scralar/Tablin-Agent-Plugins` to `chat.plugins.marketplaces` and install from it. Or **Chat: Install Plugin from Source** with `plugins/tablin-vscode`. |
+| Windsurf | `plugins/tablin-windsurf` | No plugin marketplace. Add the server address as the folder `README.md` shows. |
+| Gemini CLI | this repo | `gemini extensions install https://github.com/Scralar/Tablin-Agent-Plugins --auto-update`. |
 
 Each folder has its own `README.md` with the full steps.
+
+## Keeping it updated
+
+Every plugin version is bumped on every user-facing release, so agents that track this repo see the change.
+
+| Agent | How it updates |
+| --- | --- |
+| Claude Code | Enable auto-update for the `tablin` marketplace in `/plugin`. |
+| VS Code | Plugin auto-update is on by default. |
+| Gemini CLI | Install with `--auto-update`, or run `gemini extensions update`. |
+| ChatGPT, Codex | The marketplace syncs daily, or choose **Sync now**. |
+| Cursor | Install from the Cursor Marketplace, or add this repo as a team marketplace with **Auto Refresh**. Do not use `/add-plugin` with a link: it pins one commit. |
+| Claude web and desktop, Perplexity | A zip upload is a one-off snapshot. Download the new zip and upload it again. Perplexity update behaviour after a GitHub import is unverified. |
+| Windsurf | Nothing to update; it uses only the server address. |
+
+Install roots at the repo root, all checked by CI: `.cursor-plugin/marketplace.json`, `.claude-plugin/marketplace.json`, `.github/plugin/marketplace.json` (VS Code), `.agents/plugins/marketplace.json` (ChatGPT and Codex) and `gemini-extension.json` with `skills/` (Gemini CLI).
 
 ## Updates and releases
 

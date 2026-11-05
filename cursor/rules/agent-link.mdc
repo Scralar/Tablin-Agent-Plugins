@@ -1,6 +1,6 @@
 ---
-description: Use the Agent link plugin for the connected desk, and keep the developer connection in Settings separate.
+description: When working with Tablin jobs or candidates, use the tablin server and call guide_read first.
 alwaysApply: false
 ---
 
-When this plugin is the connection to the desk, call `guide_read` first and follow it. Do not paste a key. Keep the developer connection in Settings separate from Agent link.
+When the user asks about their Tablin jobs, candidates or screening, use the `tablin` server: call `guide_read` first and follow it. Do not paste a key. Keep the developer connection in Settings separate from Agent link.
