@@ -1,0 +1,6 @@
+---
+description: Use the Agent link plugin for the connected desk, and keep the developer connection in Settings separate.
+alwaysApply: false
+---
+
+When this plugin is the connection to the desk, call `guide_read` first and follow it. Do not paste a key. Keep the developer connection in Settings separate from Agent link.

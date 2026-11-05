@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "tablin": {
+      "type": "streamable-http",
+      "url": "https://3.9.77.189/mcp"
+    }
+  }
+}

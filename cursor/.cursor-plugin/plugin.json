@@ -1,0 +1,11 @@
+{
+  "name": "tablin-agent-link",
+  "displayName": "Tablin Agent Link",
+  "version": "0.1.1",
+  "description": "Connect Cursor to the open desk through Agent link. Choose Authenticate to sign in. There is no key to paste.",
+  "author": {
+    "name": "Tablin"
+  },
+  "license": "UNLICENSED",
+  "keywords": ["tablin", "agent-link", "mcp"]
+}

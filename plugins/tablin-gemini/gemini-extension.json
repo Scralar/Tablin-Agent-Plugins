@@ -1,0 +1,10 @@
+{
+  "name": "tablin-agent-link",
+  "version": "0.2.0",
+  "description": "Connect to the open Tablin desk through Agent link. Sign in when asked. There is no key to paste.",
+  "mcpServers": {
+    "tablin": {
+      "httpUrl": "https://3.9.77.189/mcp"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "tablin": {
+      "type": "streamable-http",
+      "url": "https://3.9.77.189/mcp"
+    }
+  }
+}
