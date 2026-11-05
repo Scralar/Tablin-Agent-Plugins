@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "version": "2.0.0",
+  "version": "2.1.0",
   "address": "https://3.9.77.189/mcp",
   "plugins": [
     {
@@ -9,11 +9,11 @@
       "folder": "tablin-agent-link-claude",
       "zip": "tablin-agent-link-claude.zip",
       "archive": "dist/tablin-agent-link-claude.zip",
-      "sha256": "a07ae3237394ec1d61f91d5616d39d65863bf4a0f6f3457f39d62d26e5de3cc4",
+      "sha256": "4a591bfe661118a035a7473c954eb9f4d79547691c1cbc66644301bfef76d0e5",
       "files": [
         {
           "path": ".claude-plugin/plugin.json",
-          "sha256": "59bddba84518a3b22951955f4daec3900d368d02ded14d8edc888a561000f6ec"
+          "sha256": "bfbfacff3e9d951979ce1d6a53cf02f40c764fabe7001b3295f26ea4f1014932"
         },
         {
           "path": ".mcp.json",
@@ -35,11 +35,11 @@
       "folder": "tablin-claude-code",
       "zip": null,
       "archive": "dist/tablin-claude-code.zip",
-      "sha256": "ddbcbc6fec908dc21199e78f3e65b1f36878db9baec11c114d9235e053bd833e",
+      "sha256": "c4c9b3a1deeb308863de5b6da91ee9c6fa241b98df40d65c1ab87f6c1ca5fe2e",
       "files": [
         {
           "path": ".claude-plugin/plugin.json",
-          "sha256": "da26ffc2edbca45425368dc8a43ddcbbfb372fb2403f9b21f08558c45def3256"
+          "sha256": "2b58965402c12f2d5cf8855884df032afdbb61f23c0d5a0e526826bb9f9dd557"
         },
         {
           "path": ".mcp.json",
@@ -65,7 +65,7 @@
       "folder": "tablin-chatgpt",
       "zip": null,
       "archive": "dist/tablin-chatgpt.zip",
-      "sha256": "7a0858c6017c1f6e20b323f11beef558bec4c05ddb0ab5d80db22dce4c687093",
+      "sha256": "11e85040c7a7ee00dcc20bda09618c1bcbada66a6fc71e49f71fcc6f66a0501c",
       "files": [
         {
           "path": ".agents/plugins/marketplace.json",
@@ -73,7 +73,7 @@
         },
         {
           "path": "plugins/tablin-agent-link/plugin.json",
-          "sha256": "92adc2a56b5ab57fd8acbe736a717942b3f79a1c9e27e1223407794f0e74b266"
+          "sha256": "987d0980d6120753f187419a82603329e6e5773b363d14651d04d66f8d6ab3b0"
         },
         {
           "path": "plugins/tablin-agent-link/mcp.json",
@@ -121,11 +121,11 @@
       "folder": "tablin-cursor",
       "zip": null,
       "archive": "dist/tablin-cursor.zip",
-      "sha256": "16d7161905fe6b6a18bb9d72cb7059c883662460e16439b2975f9404fafec27a",
+      "sha256": "e55509148aa26c98d494ea095179b5d933a98aa34a346adbf814dda4380ef794",
       "files": [
         {
           "path": ".cursor-plugin/plugin.json",
-          "sha256": "51eaa02264db4be7f15d6e2fc1a6c5f9c5842f0dbd8737aefb64037a5c24a0a0"
+          "sha256": "c7b265a68056e4917450f53d9f7bb3aed14a777c1da4c750232dd20bd7dfda02"
         },
         {
           "path": "mcp.json",
@@ -147,11 +147,11 @@
       "folder": "tablin-vscode",
       "zip": null,
       "archive": "dist/tablin-vscode.zip",
-      "sha256": "686848be61a0100a1915a747742e0e818ac0146c7bc94b9f20f0b250b8d58448",
+      "sha256": "ce7b3d260e6010815c36fba4f879860b61068ce485828484a4c6ab6d65de3de3",
       "files": [
         {
           "path": "plugin.json",
-          "sha256": "a0fabf71c8ae1076ead03ff151990d6b33783a2fd2795376eb81d3dc5448eecc"
+          "sha256": "017c9a361d70230b8c8c9b4f49b073e59ec1fdf86c1a35772fa3d256379c5564"
         },
         {
           "path": "mcp.json",
@@ -195,11 +195,11 @@
       "folder": "tablin-gemini",
       "zip": null,
       "archive": "dist/tablin-gemini.zip",
-      "sha256": "4e2e1f9f8bf4a638a39779d9ed41b9c482cf01b3125b839239fe5601f3c7ff7b",
+      "sha256": "a9a0d3b03ac1e1bea376f60858eb5cf7df42e9b6adfe6488feb327f79e9d337f",
       "files": [
         {
           "path": "gemini-extension.json",
-          "sha256": "05885ad622c85e111f0f06d31c6143ce0e51c8348206d7c99e86be482c4bcf27"
+          "sha256": "7c38cf1dd447b01491cde270673241a503dbeae4d323920fd6654521c626acd3"
         },
         {
           "path": "skills/tablin-agent-link/SKILL.md",
@@ -217,7 +217,7 @@
       "folder": "tablin-codex",
       "zip": null,
       "archive": "dist/tablin-codex.zip",
-      "sha256": "f1978a6337b880452236b5942b2f205759ea6ac88758367a26f96133b7669fd0",
+      "sha256": "c0c48f1e8199fc00c0862073ec34b8d16cdb69edf9835a287b8c38327324d92e",
       "files": [
         {
           "path": ".agents/plugins/marketplace.json",
@@ -225,7 +225,7 @@
         },
         {
           "path": "plugins/tablin-agent-link/plugin.json",
-          "sha256": "da97f7fcc0776d0747ced8c3fb06500b2c6e9434529ebfab63ff6572fa21e87c"
+          "sha256": "9e940e472a1d3746459e0097f2962fb84bfee83a30794a88f73bc3de08403e7d"
         },
         {
           "path": "plugins/tablin-agent-link/mcp.json",
