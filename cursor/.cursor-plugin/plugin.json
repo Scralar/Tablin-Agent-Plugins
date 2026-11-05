@@ -1,8 +1,8 @@
 {
   "name": "tablin-agent-link",
   "displayName": "Tablin for Cursor",
-  "version": "1.1.2",
-  "description": "Work your Tablin jobs and candidates from Cursor. Search candidates, read and update jobs, and run screening in the Tablin desktop app. Needs the app open with Agent link on, signed in with the same account. You sign in in the browser; there is no key to paste.",
+  "version": "2.0.0",
+  "description": "Work your Tablin jobs and candidates from Cursor. Search candidates, update jobs, screen and shortlist in the Tablin app on your PC. Changes show live in the open app (glow and lists). Needs the app open with Agent link on, same account. Browser sign-in; no key.",
   "author": {
     "name": "Tablin",
     "url": "https://github.com/Scralar/Tablin-Agent-Plugins"
