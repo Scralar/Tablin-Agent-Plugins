@@ -1,10 +1,21 @@
 {
   "name": "tablin-agent-link",
-  "version": "0.2.0",
-  "description": "Connect to the open Tablin desk through Agent link. Sign in when asked. There is no key to paste.",
+  "version": "1.1.0",
   "author": {
-    "name": "Tablin"
+    "name": "Tablin",
+    "url": "https://github.com/Scralar/Tablin-Agent-Plugins"
   },
-  "displayName": "Tablin Agent Link",
+  "homepage": "https://github.com/Scralar/Tablin-Agent-Plugins",
+  "repository": "https://github.com/Scralar/Tablin-Agent-Plugins",
+  "keywords": [
+    "tablin",
+    "recruiting",
+    "jobs",
+    "candidates",
+    "cv-screening",
+    "agent-link"
+  ],
+  "displayName": "Tablin for Claude",
+  "description": "Work your Tablin jobs and candidates from Claude. Search candidates, read and update jobs, and run screening in the Tablin desktop app. Needs the app open with Agent link on, signed in with the same account. You sign in in the browser; there is no key to paste.",
   "license": "UNLICENSED"
 }

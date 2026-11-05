@@ -4,14 +4,21 @@
     "name": "Tablin"
   },
   "metadata": {
-    "description": "Connect your agent to the open Tablin desk through Agent link.",
-    "version": "1.0.0"
+    "description": "Tablin plugins: work your Tablin jobs and candidates from your AI agent.",
+    "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "tablin-agent-link",
       "source": "cursor",
-      "description": "Connect Cursor to the open desk through Agent link. Choose Authenticate to sign in. There is no key to paste."
+      "description": "Work your Tablin jobs and candidates from Cursor. Needs the Tablin desktop app open with Agent link on, signed in with the same account.",
+      "category": "productivity",
+      "tags": [
+        "recruiting",
+        "jobs",
+        "candidates"
+      ],
+      "logo": "cursor/assets/logo.png"
     }
   ]
 }

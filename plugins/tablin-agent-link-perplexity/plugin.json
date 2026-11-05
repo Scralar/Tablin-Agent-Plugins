@@ -1,4 +1,4 @@
 {
   "name": "tablin-agent-link",
-  "description": "Connect to the open Tablin desk through Agent link. Sign in when asked. There is no key to paste."
+  "description": "Work your Tablin jobs and candidates from Perplexity. Search candidates, read and update jobs, and run screening in the Tablin desktop app. Needs the app open with Agent link on, signed in with the same account. You sign in in the browser; there is no key to paste."
 }

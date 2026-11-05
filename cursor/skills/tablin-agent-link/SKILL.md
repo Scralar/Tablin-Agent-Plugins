@@ -1,14 +1,14 @@
 ---
 name: tablin-agent-link
 description: >-
-  Drive the open desk through Agent link. Use when the user wants Cursor on
-  Agent link, when a tool on that server fails, or when Read and Write on
-  Agent link matter. The developer connection in Settings is separate.
+  Use the Tablin desktop app from Cursor through the tablin server: jobs,
+  candidates and screening. Use when the user asks about their Tablin jobs or
+  candidates, or when a tablin tool fails.
 ---
 
 # Agent link from Cursor
 
-This plugin's server is the open desk, through Agent link. Sign-in is the browser page Cursor opens from **Authenticate**. Do not paste a key.
+This plugin's `tablin` server reaches the Tablin desktop app open on your PC, through Agent link. Sign-in is the browser page Cursor opens from **Authenticate**. Do not paste a key.
 
 ## Before a call
 

@@ -1,0 +1,21 @@
+{
+  "name": "tablin",
+  "owner": {
+    "name": "Tablin",
+    "url": "https://github.com/Scralar/Tablin-Agent-Plugins"
+  },
+  "metadata": {
+    "description": "Tablin plugins for VS Code.",
+    "version": "1.1.0"
+  },
+  "plugins": [
+    {
+      "name": "tablin-agent-link",
+      "version": "1.1.0",
+      "homepage": "https://github.com/Scralar/Tablin-Agent-Plugins",
+      "repository": "https://github.com/Scralar/Tablin-Agent-Plugins",
+      "source": "./plugins/tablin-vscode",
+      "description": "Work your Tablin jobs and candidates from VS Code. Search candidates, read and update jobs, and run screening in the Tablin desktop app. Needs the app open with Agent link on, signed in with the same account. You sign in in the browser; there is no key to paste."
+    }
+  ]
+}
