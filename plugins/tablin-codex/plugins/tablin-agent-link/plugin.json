@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "tablin-agent-link",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Work your Tablin jobs and candidates from Codex. Search candidates, read and update jobs, and run screening in the Tablin desktop app. Needs the app open with Agent link on, signed in with the same account. You sign in in the browser; there is no key to paste.",
   "author": {
     "name": "Tablin",

@@ -36,5 +36,7 @@ The tool result names `errorCode`. Stop or retry as follows:
 - `conflict`: clashes with an existing record. Do not retry unchanged.
 - `tool_failed`: the desk could not do it. Do not retry unchanged.
 - `sign_in_required`: connect the agent again. Do not retry.
+- `no_desk_linked`: no desk is linked to this account. Ask them to open the app, turn on Agent link in Settings, then connect again. Do not retry.
+- `desk_removed`: the link to this PC was removed. Ask them to reconnect from Settings. Do not retry.
 
 Do not paste CV text, mail, or tokens into chat logs. Ids, counts, file names, and scores are enough unless the task needs that one record.
