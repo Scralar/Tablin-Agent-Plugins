@@ -7,7 +7,7 @@
     {
       "name": "tablin-agent-link",
       "source": "./",
-      "description": "Work your Tablin jobs and candidates from Claude Code. Search candidates, read and update jobs, and run screening in the Tablin desktop app. Needs the app open with Agent link on, signed in with the same account. You sign in in the browser; there is no key to paste."
+      "description": "Work your Tablin jobs and candidates from Claude Code. Search candidates, update jobs, screen and shortlist in the Tablin app on your PC. Changes show live in the open app (glow and lists). Needs the app open with Agent link on, same account. Browser sign-in; no key."
     }
   ]
 }

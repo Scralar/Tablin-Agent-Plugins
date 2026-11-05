@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "tablin-agent-link",
-  "version": "1.1.2",
-  "description": "Work your Tablin jobs and candidates from ChatGPT. Search candidates, read and update jobs, and run screening in the Tablin desktop app. Needs the app open with Agent link on, signed in with the same account. You sign in in the browser; there is no key to paste.",
+  "version": "2.0.0",
+  "description": "Work your Tablin jobs and candidates from ChatGPT. Search candidates, update jobs, screen and shortlist in the Tablin app on your PC. Changes show live in the open app (glow and lists). Needs the app open with Agent link on, same account. Browser sign-in; no key.",
   "author": {
     "name": "Tablin",
     "url": "https://github.com/Scralar/Tablin-Agent-Plugins"
@@ -22,7 +22,7 @@
       "interface": {
         "displayName": "Tablin for ChatGPT",
         "shortDescription": "Work your Tablin jobs and candidates from ChatGPT.",
-        "longDescription": "Work your Tablin jobs and candidates from ChatGPT. Search candidates, read and update jobs, and run screening in the Tablin desktop app. Needs the app open with Agent link on, signed in with the same account. You sign in in the browser; there is no key to paste.",
+        "longDescription": "Work your Tablin jobs and candidates from ChatGPT. Search candidates, update jobs, screen and shortlist in the Tablin app on your PC. Changes show live in the open app (glow and lists). Needs the app open with Agent link on, same account. Browser sign-in; no key.",
         "developerName": "Tablin",
         "category": "Productivity",
         "capabilities": [
@@ -32,7 +32,9 @@
         "websiteURL": "https://github.com/Scralar/Tablin-Agent-Plugins",
         "defaultPrompt": [
           "Use Tablin to list my open jobs.",
-          "Use Tablin to find candidates for a job."
+          "Use Tablin to find candidates for a job.",
+          "Screen my open job and shortlist the top matches.",
+          "Explain what Agent link is doing in Tablin."
         ]
       }
     }

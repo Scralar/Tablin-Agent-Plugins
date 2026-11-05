@@ -6,16 +6,16 @@
   },
   "metadata": {
     "description": "Tablin plugins for Claude Code.",
-    "version": "1.1.2"
+    "version": "2.0.0"
   },
   "plugins": [
     {
       "name": "tablin-agent-link",
-      "version": "1.1.2",
+      "version": "2.0.0",
       "homepage": "https://github.com/Scralar/Tablin-Agent-Plugins",
       "repository": "https://github.com/Scralar/Tablin-Agent-Plugins",
       "source": "./plugins/tablin-claude-code",
-      "description": "Work your Tablin jobs and candidates from Claude Code. Search candidates, read and update jobs, and run screening in the Tablin desktop app. Needs the app open with Agent link on, signed in with the same account. You sign in in the browser; there is no key to paste.",
+      "description": "Work your Tablin jobs and candidates from Claude Code. Search candidates, update jobs, screen and shortlist in the Tablin app on your PC. Changes show live in the open app (glow and lists). Needs the app open with Agent link on, same account. Browser sign-in; no key.",
       "category": "productivity"
     }
   ]

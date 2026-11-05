@@ -1,42 +1,57 @@
 ---
 name: tablin-agent-link
 description: >-
-  Use the Tablin desktop app from Cursor through the tablin server: jobs,
-  candidates and screening. Use when the user asks about their Tablin jobs or
-  candidates, or when a tablin tool fails.
+  Use the Tablin desktop app through the tablin server for jobs, candidates,
+  screening and notes. Use when the user mentions Tablin, their jobs or
+  candidates, screening, shortlists, or when a tablin tool fails.
 ---
 
-# Agent link from Cursor
+# Tablin Agent link
 
-This plugin's `tablin` server reaches the Tablin desktop app open on your PC, through Agent link. Sign-in is the browser page Cursor opens from **Authenticate**. Do not paste a key.
+Tablin is a desktop app on the person's own computer: an employer CV-screening desk that is growing into a recruiter toolkit. This plugin's `tablin` server reaches that open app. The data lives on their PC. Sign-in is the browser page Cursor opens from **Authenticate**. Do not paste a key. There are no mail tools.
 
 ## Before a call
 
-1. The desk is open. **Settings > Agent link** is on, and this PC is paired.
-2. This plugin's server address is already `https://3.9.77.189/mcp`. Do not paste a key.
-3. If Cursor shows **Authenticate**, finish that in the browser. There is no key to copy.
-4. Call `guide_read` and follow it. Do not invent tools. Mail tools are not on this link.
+1. The app is open, **Settings > Agent link** is on, and this PC is paired.
+2. Sign in with the same account that paired the desk under Settings > Agent link > This PC.
+3. Call `tablin_status` (alias `desk_status`). If online, link or read is false, stop and tell them.
+4. Call `guide_read` once this session and follow it. Do not invent tools.
+
+## What they see
+
+Calls run on their open window. The edge glows and a sticky Live toast stays up while a call runs. Successful writes reload the open lists, so they watch cards move. Confirm before a delete, a screen, a profile filing, or a bulk move. Prefer one batch call.
+
+## Credit
+
+`matching_run`, `criteria_propose` and `candidates_profile_file_run` are billed by the token. Read `usage_summary` first. Confirm before those calls.
+
+## Ids
+
+An application id starts with `cand-`. A person id starts with `cdn-`. Notes, documents and profile tools want the person id. Pass the id the tool names.
 
 ## Which connection
 
-The plugin server is the one whose calls respect **Read** and **Write** and show on **Agent link** activity. The in-repo developer host (loopback, **Settings > Developer > MCP**) is separate. Its calls do not count as Agent link. Do not point this plugin at `127.0.0.1`.
+The plugin server is the one whose calls respect **Allow write** and **Allow delete** and show on **Agent link** activity. The in-repo developer host (loopback, **Settings > Developer > MCP**) is separate. Its calls do not count as Agent link. Do not point this plugin at `127.0.0.1`.
 
 ## When a call fails
 
-The tool result names `errorCode`. Stop or retry as follows:
+The tool result names `errorCode`:
 
-- `desk_offline`: the desk is not open. Retry after they open it.
-- `agent_off`: Agent link is off. Do not retry.
-- `writes_off`: writing is off. Do not retry.
-- `tool_off`: that action is off. Do not retry.
-- `link_interrupted`: the link dropped or the call took over 120 seconds. Retry that one call once.
-- `desk_busy`: the desk has too many calls open. Wait a few seconds, then retry. Do not send many calls at once.
-- `invalid_input`: an argument was rejected. Read the message, fix the argument, and do not retry unchanged.
-- `not_found`: no record with that id. Check the id; do not retry unchanged.
-- `conflict`: clashes with an existing record. Do not retry unchanged.
-- `tool_failed`: the desk could not do it. Do not retry unchanged.
-- `sign_in_required`: connect the agent again. Do not retry.
-- `no_desk_linked`: no desk is linked to this account. Ask them to open the app, turn on Agent link in Settings, then connect again. Do not retry.
-- `desk_removed`: the link to this PC was removed. Ask them to reconnect from Settings. Do not retry.
+- `desk_offline`: the app is not open on the linked PC. Retry after they open it.
+- `agent_off`: Agent link is off in Settings. Do not retry.
+- `writes_off`: Allow write is off. Do not retry.
+- `deletes_off`: Allow delete is off. Do not retry.
+- `tool_off`: That action is turned off in Agent link. Do not retry.
+- `link_interrupted`: The link dropped or the call took over 120 seconds. Retry that one call once.
+- `desk_busy`: Too many open calls. Wait, then retry.
+- `invalid_input`: Bad argument. Fix the arguments and do not retry unchanged.
+- `not_found`: No record with that id, or the id type is wrong. Check the id.
+- `conflict`: Clashes with an existing record. Do not retry unchanged.
+- `tool_failed`: The desk could not do it. Do not retry unchanged.
+- `sign_in_required`: This agent is not connected. Reconnect from Settings or Authenticate. Do not retry.
+- `no_desk_linked`: No PC is linked to this account. Open the app, turn Agent link on, and connect again. Do not retry.
+- `desk_removed`: The link to this PC was removed. Reconnect from Settings. Do not retry.
 
-Do not paste CV text, mail, or tokens into chat logs. Ids, counts, file names, and scores are enough unless the task needs that one record.
+Do not paste CV text, notes or tokens into logs. Ids, counts, file names and scores are enough unless the task needs that one record.
+
+Call `guide_read` for workflows and enums.
