@@ -1,6 +1,6 @@
 # Tablin-Agent-Plugins
 
-Plugin packages that connect an AI agent to the Tablin desk open on your PC, through Agent link. One repo holds the package for every supported agent. The Tablin desktop app downloads the latest packages from here when you choose **Get plugin** or **Save to folder**, and checks each download against the SHA-256 in `plugins.json`.
+Plugin packages that connect an AI agent to the Tablin desk open on your PC, through Agent link. One repo holds the package for every supported agent. The Tablin desktop app downloads the latest GitHub Release (its `plugins.json` and zips) when you choose **Get plugin** or **Save to folder**, and checks each download against the SHA-256 in `plugins.json`.
 
 ## What is in it
 
@@ -30,9 +30,13 @@ Sign in to the agent with the same account as the PC running the desk. On the de
 
 Each folder has its own `README.md` with the full steps.
 
-## Updates
+## Updates and releases
 
-The packages are generated from the Tablin app repo with `scripts/export-agent-plugins.mts`. Each update raises the version in `plugins.json`. The desktop app reads that file, downloads only what changed, and keeps the last good copy so it still works offline.
+Work happens on `dev`. Changes reach `main` only by pull request. Every pull request runs `ci`: it validates `plugins.json` and every plugin manifest, checks that `dist/` and the hashes match the files (`node scripts/build.mjs --check`), and runs a secret scan.
+
+The packages are generated from the Tablin app repo with `scripts/export-agent-plugins.mts`, then `node scripts/build.mjs` rebuilds the zips and hashes. To publish, raise `version` in `plugins.json` and merge into `main`. The `release` workflow (also runnable by hand from **Actions**) rebuilds the zips, writes the hashes into `plugins.json`, and publishes a GitHub Release tagged `v<version>` with `plugins.json` and every zip attached. A version that is already released is skipped.
+
+The desktop app reads `https://github.com/Scralar/Tablin-Agent-Plugins/releases/latest/download/plugins.json`, downloads only what changed, and keeps the last good copy so it still works offline.
 
 ## Licence
 
