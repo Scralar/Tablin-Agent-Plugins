@@ -95,7 +95,7 @@
       "folder": "tablin-agent-link-perplexity",
       "zip": "tablin-agent-link-perplexity.zip",
       "archive": "dist/tablin-agent-link-perplexity.zip",
-      "sha256": "09f4d177c908430e725252c006e992755e1955fdfb877822d0983d21069bedc3",
+      "sha256": "c13df5b0cd7f8927484118cd0304feb8d11cbaf69c93e31d82275464678f5e91",
       "files": [
         {
           "path": "plugin.json",
@@ -111,7 +111,7 @@
         },
         {
           "path": "README.md",
-          "sha256": "4aa999acae40904b0d05f15b4a3dfe38acd07168aea6f5aebd3f3a7743fe1b76"
+          "sha256": "811bce8e19b0f5808ed8b45600af5da25dffb71a1bca707b8e60cc6a93c3dbd4"
         }
       ]
     },
