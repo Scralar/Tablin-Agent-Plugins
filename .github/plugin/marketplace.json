@@ -6,12 +6,12 @@
   },
   "metadata": {
     "description": "Tablin plugins for VS Code.",
-    "version": "2.1.0"
+    "version": "2.2.0"
   },
   "plugins": [
     {
       "name": "tablin-agent-link",
-      "version": "2.1.0",
+      "version": "2.2.0",
       "homepage": "https://github.com/Scralar/Tablin-Agent-Plugins",
       "repository": "https://github.com/Scralar/Tablin-Agent-Plugins",
       "source": "./plugins/tablin-vscode",
