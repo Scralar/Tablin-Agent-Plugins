@@ -19,7 +19,11 @@ Tablin is a desktop app on the person's own computer: an employer CV-screening d
 
 ## What they see
 
-Calls run on their open window. The edge glows and a sticky Live toast stays up while a call runs. Successful writes reload the open lists, so they watch cards move. Confirm before a delete, a screen, a profile filing, or a bulk move. Prefer one batch call.
+Calls run on their open window. The edge glows and a sticky Live toast stays up while a call runs. Successful writes reload the open lists, so they watch cards move. After `guide_read` once per session, confirm before a delete, a screen, a profile filing, or a bulk move. Name titles and counts. Prefer one batch call.
+
+## Timing
+
+`criteria_propose` often takes 30 to 60 seconds. On large or niche boards prefer manual criteria on the desk. Before `matching_run` run `extract_pending` or check `applications_list` `parsePendingCount` is 0 on the job.
 
 ## Credit
 
