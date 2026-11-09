@@ -1,7 +1,7 @@
 {
   "name": "tablin-agent-link",
   "displayName": "Tablin for Cursor",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "Work your Tablin jobs and candidates from Cursor. Search candidates, update jobs, screen and shortlist in the Tablin app on your PC. Changes show live in the open app (glow and lists). Needs the app open with Agent link on, same account. Browser sign-in; no key.",
   "author": {
     "name": "Tablin",

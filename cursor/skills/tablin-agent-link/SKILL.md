@@ -1,5 +1,6 @@
 ---
 name: tablin-agent-link
+version: 2.2.2
 description: >-
   Use the Tablin desktop app through the tablin server for jobs, candidates,
   screening and notes. Use when the user mentions Tablin, their jobs or
@@ -16,6 +17,10 @@ Tablin is a desktop app on the person's own computer: an employer CV-screening d
 2. Sign in with the same account that paired the desk under Settings > Agent link > This PC.
 3. Call `tablin_status` (alias `desk_status`). If online, link or read is false, stop and tell them.
 4. Call `guide_read` once this session and follow it. Do not invent tools.
+
+## Plugin version
+
+This skill is version 2.2.2. After `guide_read`, compare with `tablin_status.pluginVersion`. If yours is missing or older, tell them once how to upgrade (see the guide), then continue.
 
 ## What they see
 
@@ -56,6 +61,7 @@ The tool result names `errorCode`:
 - `not_found`: No record with that id, or the id type is wrong. Check the id.
 - `conflict`: Clashes with an existing record. Do not retry unchanged.
 - `tool_failed`: The desk could not do it. Do not retry unchanged.
+- `internal_error`: A fault inside the app, not your arguments. Do not retry or change arguments; ask the user to send Copy diagnostics.
 - `sign_in_required`: This agent is not connected. Reconnect from Settings or Authenticate. Do not retry.
 - `no_desk_linked`: No PC is linked to this account. Open the app, turn Agent link on, and connect again. Do not retry.
 - `desk_removed`: The link to this PC was removed. Reconnect from Settings. Do not retry.
