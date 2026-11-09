@@ -25,6 +25,10 @@ Calls run on their open window. The edge glows and a sticky Live toast stays up 
 
 `criteria_propose` often takes 30 to 60 seconds. On large or niche boards prefer manual criteria on the desk. Before `matching_run` run `extract_pending` or check `applications_list` `parsePendingCount` is 0 on the job.
 
+## Attach
+
+Before candidates_attach, run people_search with hasCv=readable. Attach skips people with no CV or an unreadable CV by default (NO_CV, CV_UNREADABLE).
+
 ## Credit
 
 `matching_run`, `criteria_propose` and `candidates_profile_file_run` are billed by the token. Read `usage_summary` first. Confirm before those calls.

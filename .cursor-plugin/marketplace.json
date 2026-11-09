@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "Tablin plugins: work your Tablin jobs and candidates from your AI agent.",
-    "version": "2.2.0"
+    "version": "2.2.1"
   },
   "plugins": [
     {
