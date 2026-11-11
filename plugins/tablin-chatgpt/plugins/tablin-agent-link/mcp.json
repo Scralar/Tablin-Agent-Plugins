@@ -3,7 +3,7 @@
   "mcpServers": {
     "tablin": {
       "type": "streamable-http",
-      "url": "https://3.9.77.189/mcp",
+      "url": "https://3-9-77-189.sslip.io/mcp",
       "extensions": {
         "com.openai": {
           "auth": {
