@@ -4,7 +4,7 @@ Work your Tablin jobs and candidates from Cursor: search candidates, read and up
 
 ## What is in it
 
-- `mcp.json`: one server, `tablin`, at `https://3.9.77.189/mcp`. Sign-in is OAuth in the browser.
+- `mcp.json`: one server, `tablin`, at `https://3-9-77-189.sslip.io/mcp`. Sign-in is OAuth in the browser.
 - `skills/tablin-agent-link`: when to use the link, and what to do for each error code.
 - `rules/agent-link.mdc`: call `guide_read` first, confirm before bulk changes, and keep the developer connection separate. Writes show live in the app.
 - `commands/connect-desk.md`: the connect steps as a slash command.
