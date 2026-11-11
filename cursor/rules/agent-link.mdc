@@ -1,6 +1,6 @@
 ---
-description: When working with Tablin jobs or candidates, use the tablin server, call guide_read, and confirm before bulk changes. Writes show live in the app.
+description: When working with Tablin jobs or candidates, use the tablin server, call desk_status first, and confirm before bulk changes. Writes show live in the app.
 alwaysApply: false
 ---
 
-When the user asks about their Tablin jobs, candidates or screening, use the `tablin` server: call `tablin_status` then `guide_read` once and follow it. Confirm before a delete, a screen, or a bulk change. Writes update the open lists live. Do not paste a key. Keep the developer connection in Settings separate from Agent link.
+When the user asks about their Tablin jobs, candidates or screening, use the tablin server: call desk_status with pluginVersion "3.0.0" first, and call guide_read on demand. Use applications_search for scores and reasons, screen_candidates to screen, and candidates_search with query for CV-wide search. Confirm before a delete, merge, bulk change or billed run. Writes update the open lists live. Do not paste a key.

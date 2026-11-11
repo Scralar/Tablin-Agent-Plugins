@@ -7,7 +7,7 @@ const fail = (m) => errors.push(m);
 const json = (p) => {
   try { return JSON.parse(readFileSync(p, "utf8")); } catch (e) { fail(`${p}: ${e.message}`); return null; }
 };
-const ADDRESS = "https://3.9.77.189/mcp";
+const ADDRESS = "https://3-9-77-189.sslip.io/mcp";
 const REPO = "https://github.com/Scralar/Tablin-Agent-Plugins";
 const LOGO = "https://raw.githubusercontent.com/Scralar/Tablin-Agent-Plugins/main/assets/logo.png";
 const ROOTS = [".cursor-plugin/marketplace.json", ".claude-plugin/marketplace.json", ".github/plugin/marketplace.json", ".agents/plugins/marketplace.json", "gemini-extension.json"];

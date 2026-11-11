@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "tablin": {
-      "serverUrl": "https://3.9.77.189/mcp"
+      "serverUrl": "https://3-9-77-189.sslip.io/mcp"
     }
   }
 }

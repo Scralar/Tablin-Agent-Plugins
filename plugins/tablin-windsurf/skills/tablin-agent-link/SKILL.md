@@ -1,67 +1,35 @@
 ---
 name: tablin-agent-link
-version: 2.2.2
-description: >-
-  Use the Tablin desktop app through the tablin server for jobs,
-  candidates, screening and notes. Use when the user mentions Tablin,
-  their jobs or candidates, screening, shortlists, or when a tablin tool fails.
+description: Work in the person's open Tablin app. Search and rank candidates, read jobs, make confirmed changes and run the AI buttons. Use when they mention Tablin, candidates, jobs, CVs or screening.
+version: 3.0.0
 ---
 
 # Tablin Agent link
 
-Tablin is a desktop app on the person's own computer: an employer CV-screening desk that is growing into a recruiter toolkit. The `tablin` server at `https://3.9.77.189/mcp` is a relay to that open app. The data lives on their PC. Sign-in is the browser page. There is no key to paste. There are no mail tools.
+Tablin runs on the person's own PC. These tools work in the app they have open, and they see your changes live.
 
-## Before a call
+1. Call desk_status first and pass pluginVersion 3.0.0. It shows the link state, what you may change and any plugin update.
+2. You act for the person. Say what you will do, then confirm before any delete, merge, bulk move or billed run.
+3. If Allow write, Allow delete, Allow facts or an Advanced options switch blocks a call, do not retry. Tell the person which switch to turn on.
+4. Searches return 50 results by default, with totals. Pass limit for more, or -1 for all. Rank people with applications_search instead of reading CVs.
+5. Use dryRun before a delete, merge, bulk change or billed run. Billed tools return an estimate (costGbp and seconds).
+6. File text is sent only when you ask with include.fileText.
+7. A merge cannot be undone and keeps the left candidate. Notes you add show your agent's name.
+8. Ids are candidateId, jobId, fileId and mergeId. There are no application ids.
+9. desk_status returns the pinned facts about how this person works. Read them. Save a new one with facts_actions only when the person corrects you or states a preference, as guide_read facts says.
+10. After substantial Tablin work or when the chat moves off Tablin, do a private session review (guide_read session-review); not after quick asks like desk_status or a single lookup. Save with facts_actions only when worthwhile.
 
-1. The app is open, **Settings > Agent link** is on, and this PC is paired.
-2. Sign in with the same account that paired the desk under Settings > Agent link > This PC. A different account will not reach this desk.
-3. Call `tablin_status`. If online, link or read is false, stop and tell them.
-4. Call `guide_read` once this session and follow it. Do not invent tools.
+## Read more only when you need it
 
-## Plugin version
+Call guide_read with no section for a short overview and an index. Then fetch one section:
 
-This skill is version 2.2.2. After guide_read, compare with tablin_status.pluginVersion. If yours is missing or older, tell them once how to upgrade (see the guide), then continue.
+- acting: before any delete, merge, bulk move or billed run.
+- billed: before propose_criteria, screen_candidates or populate_profile.
+- changing: before a batch of changes (ref, dryRun, deletes).
+- permissions: when a call is blocked.
+- facts: before you save, change or delete a fact.
+- session-review: after substantial Tablin work or when the conversation leaves Tablin; not after quick one-off asks.
+- searching, reading-files, notes-and-merges, workflows: when you need them.
+- errors: only after a failure.
 
-## What they see
-
-Calls run on their open window. The edge glows and a sticky Live toast stays up while a call runs. Successful writes reload the open lists, so they watch cards move. After guide_read once per session, confirm before a delete, a screen, a profile filing, or a bulk move. Name titles and counts. Prefer one batch call.
-
-## Timing
-
-Propose criteria often takes 30 to 60 seconds. On large or niche boards prefer manual criteria on the desk. Before matching_run run extract_pending or check applications_list parsePendingCount is 0 on the job.
-
-## Attach
-
-Before candidates_attach, run people_search with hasCv=readable. Attach skips people with no CV or an unreadable CV by default (NO_CV, CV_UNREADABLE).
-
-## Credit
-
-`matching_run`, `criteria_propose` and `candidates_profile_file_run` are billed by the token. Read `usage_summary` first, and `candidates_profile_file_estimate` before filing. Confirm before those calls.
-
-## Ids
-
-An application id starts with `cand-`. A person id starts with `cdn-`. List rows also include applicationId, personId, and displayName when this link calls. Notes, documents and profile tools want the person id. Pass the id the tool names.
-
-## When a call fails
-
-The tool result names `errorCode`:
-
-- `desk_offline`: Tablin is not open on the linked PC (named when known). Retry after they open it.
-- `agent_off`: Agent link is off in Settings. Do not retry.
-- `writes_off`: Allow write is off. Do not retry.
-- `deletes_off`: Allow delete is off. Do not retry.
-- `tool_off`: That action is turned off in Agent link. Do not retry.
-- `link_interrupted`: The link dropped or the call took over 120 seconds. Retry that one call once.
-- `sign_in_required`: This agent is not connected. Reconnect from Settings or Authenticate. Do not retry.
-- `no_desk_linked`: No PC is linked to this account. Open the app, turn Agent link on, and connect again. Do not retry.
-- `desk_removed`: The link to this PC was removed. Reconnect from Settings. Do not retry.
-- `invalid_input`: Bad argument. Fix the arguments and do not retry unchanged.
-- `not_found`: No record with that id, or the id type is wrong. Check the id.
-- `conflict`: Clashes with an existing record. Do not retry unchanged.
-- `tool_failed`: The desk could not do it. Do not retry unchanged.
-- `internal_error`: A fault inside the app, not your arguments. Do not retry or change arguments; ask the user to send Copy diagnostics.
-- `desk_busy`: Too many open calls (max 16). Wait, then retry.
-
-Do not paste CV text, notes or tokens into logs. Ids, counts, file names and scores are enough unless the task needs that one record.
-
-Call `guide_read` for workflows and enums.
+Do not fetch the whole guide (section all) unless the person asks for it.

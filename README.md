@@ -10,7 +10,7 @@ Plugins that let your AI agent work your Tablin jobs, candidates and screening i
 - `.cursor-plugin/marketplace.json`: lets Cursor install the Cursor plugin straight from this repo.
 - `plugins.json`: the version, and for each agent the folder, zip and SHA-256 of the zip and of every file.
 
-Every package holds only the public Agent link relay address (`https://3.9.77.189/mcp`) and the skill text. There are no keys, tokens or passwords. You sign in in your browser when the agent connects.
+Every package holds only the public Agent link relay address (`https://3-9-77-189.sslip.io/mcp`) and the skill text. There are no keys, tokens or passwords. You sign in in your browser when the agent connects.
 
 ## Install
 
