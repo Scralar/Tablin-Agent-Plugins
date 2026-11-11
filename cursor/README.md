@@ -4,7 +4,7 @@ Work your Tablin jobs and candidates from Cursor: search candidates, read and up
 
 ## What is in it
 
-- `mcp.json`: one server, `tablin`, at `https://3-9-77-189.sslip.io/mcp`. Sign-in is OAuth in the browser.
+- `mcp.json`: one server, `tablin`. The address is in that file and is not shown here. Sign-in is OAuth in the browser.
 - `skills/tablin-agent-link`: when to use the link, and what to do for each error code.
 - `rules/agent-link.mdc`: call `guide_read` first, confirm before bulk changes, and keep the developer connection separate. Writes show live in the app.
 - `commands/connect-desk.md`: the connect steps as a slash command.
@@ -21,7 +21,7 @@ In Cursor, add this repository as a plugin source (the install file is `.cursor-
 
 ## Other clients
 
-Any MCP client with OAuth (for example Perplexity) uses the same address and the same error codes. The client name shown on the desk comes from the name the client sends when it connects.
+Any MCP client with OAuth (for example Perplexity) uses the same connection and the same error codes. The client name shown on the desk comes from the name the client sends when it connects.
 
 ## Upgrading from the desk server
 
