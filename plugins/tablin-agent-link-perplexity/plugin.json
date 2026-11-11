@@ -1,4 +1,4 @@
 {
   "name": "tablin-agent-link",
-  "description": "Work your Tablin jobs and candidates from Perplexity. Search candidates, update jobs, screen and shortlist in the Tablin app on your PC. Changes show live in the open app (glow and lists). Needs the app open with Agent link on, same account. Browser sign-in; no key."
+  "description": "Work your Tablin jobs and candidates from Perplexity. Search candidates, update jobs, screen and shortlist in the Tablin app on your PC. Changes show live in the open app (glow and lists). Needs the app open with Agent link on, same account. Browser sign-in; no key. Session review is required at two triggers. Finish it by calling facts_actions review_done. Only the review output is private. Fact changes are announced by default, with what changed and why."
 }
